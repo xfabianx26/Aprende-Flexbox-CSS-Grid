@@ -1,0 +1,40 @@
+Paul Irish
+definerle el tamaño a la caja y no se comporte diferente con un padding o margin
+https://www.paulirish.com/2012/box-sizing-border-box-ftw/
+
+W3C
+https://validator.w3.org/
+
+Normalizar css
+algunos navegadores le aplican estilos diferente a nuestro sitio web
+primero normalize despues css
+https://necolas.github.io/normalize.css/
+
+--Forma de escribir codigo
+BEM Block element modifier
+.card
+.card__titulo {}
+.card__imagen {}
+.card__boton {}
+.card__boton--activo {}
+
+Utilidades
+.text-center {}
+.color-red-100 {}
+.bg-blue-200 {}
+
+Módulos 
+.card{}
+.card h2 {}
+.card img {}
+.card a {}
+
+SMACSS
+#header, #article, #footer{
+
+}
+#article {}
+
+
+Link:
+practica flexbox: https://flexboxfroggy.com/

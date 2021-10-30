@@ -1,0 +1,218 @@
+:root {
+  --azul: #0071b7;
+  --blanco: #fff;
+  --naranja: #ff4f1e;
+}
+html {
+  font-size: 62.5%; /** 1REM = 10pX **/
+  box-sizing: border-box;
+}
+*,
+*:before,
+*:after {
+  box-sizing: inherit;
+}
+
+body {
+  background-color: var(--azul);
+  font-family: "Lato", sans-serif;
+  font-size: 1.6rem;
+}
+
+h1,
+h2 {
+  color: var(--blanco);
+  text-align: center;
+  margin: 5rem 0;
+  padding: 1rem;
+}
+.caja-curso {
+  background-color: var(--naranja);
+  text-align: center;
+  color: var(--blanco);
+  padding: 5rem;
+}
+.caja-curso h1 {
+  margin: 0;
+}
+.caja-curso p {
+  font-size: 2.4rem;
+}
+.caja-curso a {
+  font-size: 2.4rem;
+  padding: 2rem;
+  display: inline-block;
+  text-decoration: none;
+  color: var(--blanco);
+  padding: 0;
+}
+
+.contenedor {
+  max-width: 120rem;
+  margin: 0 auto;
+}
+.box {
+  background-color: var(--naranja);
+  color: var(--blanco);
+  padding: 5rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 4rem;
+  border: 1rem solid #bb2b03;
+}
+
+.contenedor > div {
+  background-color: var(--blanco);
+  padding: 5rem;
+}
+
+/* 1  Display Flex*/
+.d-flex {
+  display: flex;
+}
+/* 2  Flex Direction*/
+
+.d-flex-2 {
+  display: flex;
+  flex-direction: row;
+}
+
+/* 3 Justify Content (Dirección Row */
+.d-flex-3 {
+  display: flex;
+  justify-content: start; /* horizontal  */
+}
+/* 4. Justify Content (Dirección Column) */
+.d-flex-4 {
+  display: flex;
+  flex-direction: column; /* vertical */
+  justify-content: space-evenly;
+  height: 93.75rem;
+}
+/*5. Align Items (Dirección Row) */
+/* alinea arriba hacia bajo cuando la dirección es row  */
+/* este es por defecto stretch */
+.d-flex-5 {
+  display: flex;
+  height: 1000px;
+  align-items: flex-start;
+  align-items: flex-end;
+  align-items: center;
+}
+
+/* 6.- Align Items (Dirección Columna) */
+
+.d-flex-6 {
+  
+  display: flex;
+  flex-direction: column;
+  height: 800px;
+  align-items: stretch;
+}
+
+/* 7.- Align Items y JustifyContent */
+.d-flex-7 {
+    /* esto valores se aplicaan display: flex */
+  /* 
+    
+    flex-direction: row;
+      justify-content: start;
+     align-items: stretch;
+    */
+  display: flex;
+  flex-direction: column;
+  justify-content: start;
+  align-items: flex-end;
+  height: 800px;
+}
+
+
+/* 8.- Flex Basis */
+/* esta en una propiedad que se aplica en el hijo */
+.d-flex-8 {
+display: flex;
+}
+
+.d-flex-8  .box{
+    flex-basis: 33%;
+    /*
+        width: forza su tamaño
+        flexbasis: tamaño inicial despues de hay empeza hace flecible
+    */
+    flex-basis: 200px;
+}
+/* 9.- Gap y Calc */
+.d-flex-9{
+    display: flex;
+  /*   gap: 2rem; */
+  justify-content: space-between;
+
+}
+.d-flex-9  .box{
+    flex-basis: calc(33.3% - 1rem);
+    
+}
+.d-flex-9  .box:nth-child(1){
+    flex-basis: calc(50% - 1rem );
+}
+.d-flex-9  .box:nth-child(2){
+    flex-basis: calc(25% - 1rem );
+}
+.d-flex-9  .box:nth-child(3){
+    flex-basis: calc(25% - 1rem );
+}
+
+/* 10.- Flex Wrap */
+/* esto es para que cuando el contenedio pase el límite del marge 
+se desborde */
+.d-flex-10 {
+  display: flex;
+  flex-wrap: wrap;
+}
+.d-flex-10  .box{
+  flex-basis: 33.3%;
+}
+/* 11.- Flex Grow< */
+/* el factor de crecimiento
+si le damos grow 4 crece 4 veces más
+los otros crece 1
+le da a uno 4 pixeles a los otros 1 pixel
+*/
+.d-flex-11{
+  display: flex;
+}
+.d-flex-11 .box:nth-child(1){
+  flex-grow: 8;
+}
+.d-flex-11 .box:nth-child(2){
+  flex-grow: 1;
+}
+.d-flex-11 .box:nth-child(3){
+  flex-grow: 1;
+}
+/* 12.- Flex Shrink< */
+.d-flex-12{
+
+  display: flex;
+}
+.d-flex-12 .box{
+  flex-grow: 1;
+  flex-basis: 300px;
+}
+.d-flex-12 .box:nth-child(3){
+  /* este se vuelve mas mequeño */
+  flex-shrink: 2;
+}
+
+/* 3.- Flex Shorthand */
+.d-flex-13{
+  display: flex;
+  gap: 2rem;
+}
+.d-flex-13 .box{
+ /*  flex-basis: 33.3%;
+  flex-grow: 1;
+  flex-shrink: 1; */
+  flex: 0 0  33.3%;
+}
