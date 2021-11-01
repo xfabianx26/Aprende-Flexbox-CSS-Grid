@@ -1,0 +1,35 @@
+/* Desktop First */
+.oferta{
+    background-color: #004463;
+    padding: 2rem;
+    text-align: center;
+    max-width: 60rem;
+    margin: 0 auto;
+    }
+
+
+    
+    .precio{
+        font-size: 4rem;
+        margin: 0;
+    }
+
+    /* cuando trabaj desktop first tiene 
+    que poner los media querry del más grande al 
+    mas mequeño */
+
+    @media (max-width: 800px) {
+        .oferta{
+            max-width: 40rem;
+            background-color: red;
+            
+        }
+    }
+
+@media (max-width: 600px) {
+    .oferta{
+        max-width: 100%;
+        background-color: aqua;
+    }
+}
+

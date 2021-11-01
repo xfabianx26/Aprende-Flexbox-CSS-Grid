@@ -1,0 +1,10 @@
+/* Atributo */
+/* ^ todo los que inicie */
+/* $ que finalicen $ */
+a[href$="http"]{
+    color: red
+}
+
+input[type="tel"]{
+    border: 5px solid red;
+}

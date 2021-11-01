@@ -1,0 +1,7 @@
+/* Selector de Clases Anidadas */
+.header .descripcion{
+    color: red;
+}
+.descripcion{
+    color: blue;
+}

@@ -1,0 +1,32 @@
+
+/* Mobile First */
+
+.oferta{
+background-color: #004463;
+padding: 2rem;
+text-align: center;
+}
+
+.precio{
+    font-size: 4rem;
+    margin: 0;
+}
+/* que de 0 599 ignora el media query */
+@media(min-width: 600px){
+/* se pone lo que va cambiar 600px en adelante */
+    .oferta{
+        max-width: 40rem;
+        margin: 0 auto;
+    }
+    .precio{
+        font-size: 2rem;
+    }
+
+}
+
+@media(min-width: 800px){
+    .oferta{
+        max-width: 60rem;
+        
+    }
+}

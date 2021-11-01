@@ -38,3 +38,10 @@ SMACSS
 
 Link:
 practica flexbox: https://flexboxfroggy.com/
+
+
+aplicación para responsive
+https://responsively.app/
+
+estandar de media querry
+https://css-tricks.com/snippets/css/media-queries-for-standard-devices/

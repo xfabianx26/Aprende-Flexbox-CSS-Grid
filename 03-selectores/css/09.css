@@ -1,0 +1,6 @@
+/* 9.- Primer Elemento Después */
+/* este se va al siguiente hijo */
+/* vete al siguiente + */
+.admin div + p{
+ background-color: red;
+}

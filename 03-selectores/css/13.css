@@ -1,0 +1,31 @@
+/* 13.- Elemento en Especifico  */
+/* pseudo selectores */
+/* ul li:nth-of-type(2)
+{
+    border: 2px solid red;
+} */
+
+ul li:nth-child(3n + 1)
+{
+    border: 2px solid red;
+}
+
+/* 2n + 1 */
+
+/* 
+tambien 
+odd impares
+even pares
+2 (0) + 1 = 1
+2 (1) + 1 = 3
+2 (2) + 1 = 5
+
+4 (0) + 4 = 1
+4 (1) + 4 = 4
+4 (2) + 4 = 7
+
+ejemplo
+3 (0) + 1 = 1
+3 (1) + 1 = 4
+3 (2) + 1 = 7
+*/

@@ -1,0 +1,12 @@
+/* 14.- Seleccionar todos los elementos excepto uno o unos */
+
+/* .heading,
+.descripcion,
+.oferta
+{
+color: red;
+} */
+/* selecciona todo los parrafos menos el .textp */
+p:not(.texto):not(.oferta){
+    color: red;
+}

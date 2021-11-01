@@ -1,0 +1,7 @@
+
+img{
+    /* nunca va crecer mas mas de su tamaño natural me pero se puede hacer mas mequeña */
+    max-width: 100%;
+    display: block;
+}
+

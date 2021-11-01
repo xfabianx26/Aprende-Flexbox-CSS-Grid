@@ -1,0 +1,5 @@
+/* 8.- Primer Nivel de Hijos */
+/* este busca el primer hijo aplicarle los estilos */
+.admin > div {
+border: 2px solid red;
+}

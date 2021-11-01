@@ -1,0 +1,9 @@
+/* 12.- último Hijo de una lista */
+
+ul li:last-child{
+    border: 2px solid  red;
+}
+
+/* ul li:last-of-type{
+    border: 2px solid  red;
+} */

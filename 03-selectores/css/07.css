@@ -1,0 +1,8 @@
+/* 7.- 2 Elementos */
+/* pongale a texto y a oferta */
+.texto,
+ .oferta{
+    border: 3px solid yellow;
+    padding: 2rem;
+}
+
