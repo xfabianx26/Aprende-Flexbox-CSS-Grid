@@ -45,3 +45,10 @@ https://responsively.app/
 
 estandar de media querry
 https://css-tricks.com/snippets/css/media-queries-for-standard-devices/
+
+
+
+Modernizr libreria js 
+me va poder cargar mis imagen avif webp jpg
+y el navegador lo reconoce y el lige cual formate es el adecuado
+https://modernizr.com/
