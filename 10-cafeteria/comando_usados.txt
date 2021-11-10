@@ -1,0 +1,29 @@
+supe a correr gulp (gulp dev)
+
+diferencias
+version nueva .scss(llaves)  |  la vieja .sass(no llaves)
+
+
+como instalar gulp
+1)npm  i --save-dev gulp
+aca busca las tareas
+2)gulpfile.js
+
+3)npm i --save-dev sass gulp-sass
+4)npm i --save-dev autoprefixer gulp-postcss
+5)_archivo.scss _ bajo se significa que va ser incluido en otro archivo
+6)npm i --save-dev gulp-imagemin(esta no esta soportada)  - uso esta npm i gulp-imagemin@7.0.0  
+7)npm i --save-dev gulp-webp
+8)npm i --save-dev gulp-avif
+
+9)buscamos los user Snippert scss.json
+10)npm i --save-dev gulp-sourcemaps | porder identificar nuestro proyecto
+11)optimizar nuestro código | npm i --save-dev cssnano
+
+errores
+1)Pues si no encuentra el comando, es por que Gulp no esta instalado globalmente.
+Instalaló globalmente con: npm install gulp-cli -g
+
+2)no puede haber 2 funciones con el mismo nombre
+3)esta pensando desde scss y tengo que pensas desde el css  background-image: url(../img/header_inicio.jpg);
+../ se sale de la carpeta

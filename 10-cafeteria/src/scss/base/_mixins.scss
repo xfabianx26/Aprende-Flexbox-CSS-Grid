@@ -1,0 +1,35 @@
+/* para reutilizar codigo */
+@use 'variables' as v;
+@mixin  telefono {
+    @media (min-width: v.$telefono){
+
+        @content; /* para que tome todo el contenido que le pasamos en el media query */
+    }
+}
+
+
+@mixin  tablet {
+    @media (min-width: v.$tablet) {
+        
+
+        @content;
+    }
+    
+}
+
+@mixin  desktop {
+    @media (min-width: v.$desktop) {
+        
+
+        @content;
+    }
+    
+}
+
+
+/* mixin más intelegente */
+@mixin grid($columnas, $espaciado) { /* que tome valores */
+    display: grid;
+    grid-template-columns: repeat($columnas, 1fr);
+    gap: $espaciado;
+}

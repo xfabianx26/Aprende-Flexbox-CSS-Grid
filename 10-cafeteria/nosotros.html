@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="build/css/app.css" />
+    <!-- fuentes -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Bona+Nova:ital@1&family=Raleway:wght@700;900&family=Roboto:ital,wght@0,700;1,400&display=swap"
+      rel="stylesheet"
+    />
+
+    <title>Cafetería</title>
+  </head>
+
+  <body>
+    <header class="header header-nosotros">
+      <div class="contenido-header contenedor">
+        <div class="barra">
+          <div class="logo">
+            <img src="build/img/logo.svg" alt="logo cafeteria" />
+          </div>
+          <nav class="nav-principal">
+            <a href="index.html">Inicio</a>
+            <a class="activo" href="nosotros.html">Nosotros</a>
+            <a href="proceso.html">Proceso</a>
+            <a href="menu.html">Menú</a>
+            <a href="galeria.html">Galería</a>
+            <a href="contacto.html">Contacto</a>
+          </nav>
+        </div>
+
+        <div class="texto-header">
+          <h1>Una nueva experiencia cada día</h1>
+        </div>
+      </div>
+    </header>
+
+    <main class="contenedor contenido-principal">
+        <h2><span>Conoco más</span>sobre nosotros</h2>
+
+
+            <div class="conetido-nosotros">
+                <div class="imagen">
+
+                    <picture>
+                        <source srcset="build/img/nosotros_sidebar.avif" type="image/avif" >
+                        <source srcset="build/img/nosotros_sidebar.webp" type="image/webp" >
+                        <source srcset="build/img/nosotros_sidebar.jpg" type="image/jpeg" >
+    
+                        <img loading="lazy" decoding="async" lazyalt="imagen" src="build/img/nosotros_sidebar.jpg"  alt="foto nosotros" width="500" height="300">
+                    </picture>
+                </div>
+
+                <div class="texto">
+                    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Tempore veritatis enim ducimus deleniti vero iure accusantium dolores animi necessitatibus error. Mollitia minus nulla quia velit vel beatae similique quisquam error?</p>
+    
+                    <!-- representa una cita -->
+                    <blockquote>Excelente Sabor!</blockquote>  
+    
+                    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Tempore veritatis enim ducimus deleniti vero iure accusantium dolores animi necessitatibus error. Mollitia minus nulla quia velit vel beatae similique quisquam error?</p>
+                </div>
+            </div>
+
+    </main>
+
+    <footer class="footer">
+      <div class="contenedor contenido-footer bg-white">
+        <div class="footer-box ubicacion">
+          <h3>Ubicación</h3>
+          <p>Cr 22b N° 56bb 14 int 121</p>
+          <p>Medellín</p>
+        </div>
+        <div class="footer-box reservacion">
+          <h3>Reservación</h3>
+          <p>3016805974</p>
+          <a href="tel:+3016805974">Llamar</a>
+        </div>
+        <div class="footer-box horario">
+          <h3>Horario</h3>
+          <p>Lun-Jue: 11:00 - 22:00</p>
+          <p>Vie-Sab: 09:00 - 24:00</p>
+          <p>Domingo: Cerrado</p>
+        </div>
+      </div>
+      <p class="copyright">Todo los derechos reservados. La Cafetería</p>
+    </footer>
+  </body>
+</html>

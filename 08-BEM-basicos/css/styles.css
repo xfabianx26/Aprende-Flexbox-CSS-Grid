@@ -72,4 +72,73 @@ img {
     color: var(--blanco);
     padding: 0;
 }
+.productos{
+margin-top: 5rem;
+}
 
+.productos__heading{
+    color: var(--blanco);
+    text-align: center;
+    padding: 3rem 0;
+}
+@media (min-width: 768px){
+    .productors__grid{
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        gap: 2rem;
+    }
+}
+
+.producto{
+    background-color: var(--blanco);
+    margin-bottom: 1rem;
+}
+@media (min-width: 768px){
+    .producto{
+        margin-bottom: 0;
+    }
+}
+.producto:last-of-type{
+    margin-bottom: 0;
+}
+.producto__contenido{
+    padding: 2rem;
+}
+.producto__nombre{
+    font-size: 4rem;
+}
+.producto__descripcion{
+    color: #8b888b;
+    margin: 0; /* todo los parrafos tiene margin */
+}
+
+.producto__precios{
+    display: flex;
+    justify-content: space-between;
+
+}
+.producto__precio{
+    font-size: 4rem;
+    color: green;
+    font-weight: 900;
+    margin: 0;
+
+}
+/* bloque  elemento modificar */
+.producto__precio--oferta{
+    color: red;
+    text-decoration: line-through;
+}
+.producto__boton{
+    all:unset;  /* quitarle toda las propiedades que trae el boton */
+    background-color: var(--azul);
+    width: 100%;
+    padding: 1rem 0;
+    text-align: center;
+    color: var(--blanco);
+    cursor: pointer;
+    
+}
+.producto__boton:hover{
+    background-color: #014575;
+}
